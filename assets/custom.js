@@ -82,7 +82,7 @@ var hello = function() {
         do {
             var lang = Math.floor(Math.random() * my.translations.length);
         } while(lang == my.current);
-        $("#hero").html(my.translations[lang].hello);
+        $("#hero").html(my.translations[lang].hello + "!");
         $("#language").html(my.translations[lang].lang);
         my.current = lang;
     };
